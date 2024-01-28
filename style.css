@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+  font-family: 'Roboto',sans-serif;
+ }
+
+ a{
+  text-decoration: none;
+  columns: #fff;
+ }
+ .header{
+   background: #CFC9F9;
+   height: 80px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   -webkit-transition: all 0.3s ease-out;
+   transition: all 0.3s ease-out;
+ }
+
+ .navbar{
+   background: #CFC9F9;
+   /* position: fixed;
+   top: 0; */
+ }
+
+ .navbar-brand span {
+  color: #331b95  ;
+ }
+ 
+ .nav-link{
+   color: #666666;
+ }
+
+ .nav-link:focus span{
+   color: #331b95;
+ }
+
+
+ .nav-btn{
+  padding: 15px 2%;
+  box-shadow: 0 0 5px #e5e5ea, 0 0 25px #e5e5ea;
+  color: #4770ff;
+  font-size: 18px;
+  border-radius: 20px;
+  background:transparent;
+  font-size: 20px;
+  line-height: 1em;
+  font-weight: 400;
+  text-align: center;
+  text-transform: none;
+  border: none;
+ }
+ .nav-btn:hover{
+  box-shadow: 0 0 5px #e5e5ea,
+   0 0 25px #e5e5ea, 0 0 50px #e5e5ea,
+   0 0 100px #e5e5ea,
+   0 0 200px #e5e5ea;
+   font-weight: 500;
+   transition: 0.4s ease-in-out;
+ }
+
+
+ .section{
+  background-color: #CFC9F9;
+  height: 680px;
+  /* margin-top: 30px; */
+  /* position: relative;
+  top: 80px;
+  left: 0; */
+ }
+ .bg-img{
+  position: relative;
+  top:  0px;
+  left:0;
+  object-fit: cover;
+  /* background-repeat: no-repeat; */
+  height: 100%;
+  width: 100%;
+ }
+
+ .text-content{
+  position: absolute ;
+  top: 200px;
+  left: 100px;
+ }
+
+ .text-content h1{
+  font-size: 3.5rem;
+ }
+ .text-content span{
+  color: #22005e;
+ }
+
+ .text-content h2{
+  color: #22005e ;
+ }
+.text-content h2 span{
+  margin-top: 50px;
+  color: #666666;
+}
+ /* 
+==================================
+    Custom Scrollbar
+==================================
+*/
+
+::-webkit-scrollbar{
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track{
+  background: #CFC9F9;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background: #22005e;
+}
+ /* 
+==================================
+    Main setiion Design
+==================================
+*/
+/* .main-section{
+  width: 100%;
+  background: url("https://png.pngtree.com/thumb_back/fh260/back_pic/04/24/66/495836a65fcb8f9.jpg") no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+} */
+.section-bg{
+  width: 100%;
+  background: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg") no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.section-img{
+  object-fit: cover;
+  height: 600px;
+}
+
+ /* 
+==================================
+    Footer Design
+==================================
+*/
+
+.footer{
+  padding-top: 49px;
+  padding-bottom: 47px;
+  border-top: 1px solid #f7f7fa;
+  background-color: #fff;
+  /* height: 500px; */
+  width: 100%;
+  background: url("https://img.freepik.com/free-vector/abstract-empty-blue-color-banner-with-blur-effect-backdrop_1017-44266.jpg") no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer h3{
+  margin-top: 0px;
+  margin-bottom: 18px;
+  color: #3a395e;
+  font-size: 28px;
+  line-height: 1.286em;
+  font-weight: 700;
+}
+
+.footer-para{
+  line-height: 25px;
+  margin-bottom: 26px;
+}
+
+.nav-footer-title{
+  margin-bottom: 29px;
+  margin-left: 10px;
+  color: #4770ff;
+  font-size: 20px;
+  line-height: 1.1em;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.footer-menu ul{
+  list-style: none;
+}
+
+
+.footer-li{
+  margin-bottom: 15px;
+}
+
+.footer-li a{
+  text-decoration: none;
+  padding: 10px 1%;
+  border-radius: 20px;
+}
+
+.footer-li a:hover{
+    box-shadow: 0 0 5px #e5e5ea,
+     0 0 25px #e5e5ea, 0 0 50px #e5e5ea,
+     0 0 100px #e5e5ea,
+     0 0 200px #e5e5ea;
+     font-weight: 500;
+     transition: 0.4s ease-in-out;
+}
+
+.icons-container{
+  font-size: 30px;
+  margin-top: 40px;
+
+}
+.icons-container a{
+  color: #3a395e;
+  margin-left: 20px;
+}
+
+ /* 
+==================================
+    About Design
+==================================
+*/
+
+.qualification{
+  width: 100%;
+  background: url("https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais") no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+}
+.about-section{
+  height: 800px;
+}
+
+.about-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.about-img-container img{
+  box-shadow: 0 0 5px #CFC9F9,
+     0 0 25px #CFC9F9, 0 0 50px #CFC9F9,
+     0 0 100px #CFC9F9,
+     0 0 200px #CFC9F9;
+  margin-top: 130px;
+  object-fit: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%
+}
+
+.about-me h1{
+  margin-top: 100px;
+  font-family: 'dancing Script', cursive;
+}
+
+.about-para{
+  display: flex;
+  justify-content: center;
+}
+
+.about-para p{
+  /* word-wrap: break-word; */
+  width: 500px;
+  letter-spacing: 0.5;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.about-row-para{
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.para-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .education{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.education h2{
+  color: #4770ff;
+}
+
+.education p{
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 0;
+} */
+
+
+@media only screen and (max-width: 767px){
+
+  .section{
+    height: 450px;
+  }
+  .bg-img{
+    top: 80px;
+  }
+
+  .text-content{
+    left: 0;
+    margin: 0;
+  }
+
+  .text-content h1{
+    font-size: 3rem;
+  }
+
+  .navbar-btn{
+    margin-left: 45%;
+    margin-top: 10px;
+  }
+
+  .footer-li{
+    margin-right: 10px;
+  }
+
+  .about-img-container img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .about-para p{
+    width: 100%;
+  }
+
+  .about-section{
+    height: 100%;
+  }
+}
+
+
+@media screen and (min-width: 767px) and (max-width:1023px){
+  .section{
+    height: 700px;
+  }
+  
+  .bg-img{
+    top: 80px;
+    width: 100%;
+    height: 600px;
+  }
+ 
+  .about-para p{
+    width: 100%;
+  }
+
+  .about-para{
+    padding: 30px;
+  }
+  
+  .about-section{
+    height: 100%;
+  }
+}
