@@ -260,7 +260,9 @@
 
 .about-section .row{
   backdrop-filter: blur(30px);
-  background-color: rgba(65, 65, 65, 0.308);
+  /* background-color: rgba(65, 65, 65, 0.308); */
+  background-color: rgba(255, 251, 251, 0);
+
 }
 .about-section .bg-hover-container{
   /* width: fit-content; */
@@ -424,6 +426,26 @@ color: #fff;
   .about-section{
     height: 100%;
   }
+
+  .about-section .bg-hover-container::before {
+    width: 200px;
+    height: 200px;
+    content: "";
+    position: absolute;
+    /* background-color: rgb(144, 161, 255); */
+    background: #fff;
+    z-index: -1;
+    border-radius: 50%;
+    left: 300px;
+    top: 300px;
+    transition: all 1s;
+  }
+
+
+/* .about-section .row{
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.863);
+} */
 }
 
 
