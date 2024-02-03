@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="header">
-    <div class="container">
+    <div class="container-fluid">
   <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down"
   data-aos-easing="linear"
   data-aos-duration="1500">
@@ -56,39 +56,7 @@
      data-aos-duration="1000">
   </div>
 </div>
-<footer class="footer">
-  <div class="container" data-aos="fade-up"
-  data-aos-duration="1000">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
-        <h3>Thanks for visiting!</h3>
-        <p class="footer-para">
-          Got questions, comments, or feedback? 
-          <br>
-          Feel free to reach out and contact me.
-        </p>
-        <button class="nav-btn ms-lg-auto center" onclick="openEmail()">Contact</button>
-      </div>
-      <div class="col-lg-4 col-md-12 text-center">
-        <div class="nav-footer-title ms-4">Navigation</div>
-        <div class="footer-menu">
-          <ul >
-            <li class="footer-li"><a href="./index.html">Home</a></li>
-            <li class="footer-li"><a href="./about.html">About</a></li>
-            <li class="footer-li"><a href="#" onclick="openEmail()">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-12">
-        <div class="icons-container center">
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -106,4 +74,48 @@
 }
     </script>   
 </body>
-</html>
+</html><footer class="footer">
+  <div class="container" data-aos="fade-up"
+  data-aos-duration="1000">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-4">
+        <h3>Thanks for visiting!</h3>
+        <p class="footer-para">
+          Got questions, comments, or feedback? 
+          <br>
+          Feel free to reach out and contact me.
+        </p>
+        <button class="nav-btn ms-lg-auto center" onclick="openEmail()">Contact</button>
+      </div>
+      <div class="col-lg-4 col-md-12 text-center">
+        <div class="nav-footer-title ms-4">Navigation</div>
+        <div class="footer-menu">
+          <ul >
+            <!-- <li class="footer-li"><a href="./index.html">Home</a></li>
+            <li class="footer-li"><a href="./about.html">About</a></li> -->
+            <li class="footer-li"><button class="button">
+              <span class="button-content">Home </span>
+            </button></li>
+            <li class="footer-li"><button class="button">
+              <span class="button-content">About </span>
+            </button></li>
+            <li class="footer-li">
+              <!-- <a href="#" >Contact</a> -->
+              <button class="button">
+                <span class="button-content" onclick="openEmail()">cotact </span>
+              </button>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="icons-container center">
+          <a href="https://github.com/Mahir7878"><i class="fab fa-github"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

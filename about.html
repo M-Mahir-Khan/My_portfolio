@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="shorcut icon" href="https://community.envri-fair.eu/wp-content/uploads/2016/08/software-developer-copy-1024x1024.jpg">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link  href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <div class="header">
-        <div class="container">
+        <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1500">
@@ -42,6 +41,7 @@
     </div>
     
 <div class="about-section p-3">
+  <div class="bg-hover-container">
   <div class="row">
     <div class="col-lg-6 col-md-12 col-12">
         <div class="about-img-container">
@@ -59,6 +59,7 @@
         </div>
       </div>
     </div>
+</div>
 </div>
 </div>
 
@@ -118,15 +119,27 @@
         <div class="nav-footer-title ms-4">Navigation</div>
         <div class="footer-menu">
           <ul >
-            <li class="footer-li"><a href="./index.html">Home</a></li>
-            <li class="footer-li"><a href="./about.html">About</a></li>
-            <li class="footer-li"><a href="#" onclick="openEmail()">Contact</a></li>
+            <!-- <li class="footer-li"><a href="./index.html">Home</a></li>
+            <li class="footer-li"><a href="./about.html">About</a></li> -->
+            <li class="footer-li"><button class="button">
+              <span class="button-content">Home </span>
+            </button></li>
+            <li class="footer-li"><button class="button">
+              <span class="button-content">About </span>
+            </button></li>
+            <li class="footer-li">
+              <!-- <a href="#" >Contact</a> -->
+              <button class="button">
+                <span class="button-content" onclick="openEmail()">cotact </span>
+              </button>
+              
+            </li>
           </ul>
         </div>
       </div>
       <div class="col-lg-4 col-md-12">
         <div class="icons-container center">
-          <a href=""><i class="fab fa-github"></i></a>
+          <a href="https://github.com/Mahir7878"><i class="fab fa-github"></i></a>
           <a href=""><i class="fab fa-instagram"></i></a>
           <a href=""><i class="fab fa-linkedin"></i></a>
         </div>
@@ -134,8 +147,6 @@
     </div>
   </div>
 </footer>
-
-
     <!-- bootstrap cdn -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

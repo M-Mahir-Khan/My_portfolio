@@ -9,6 +9,7 @@
 
  body{
   font-family: 'Roboto',sans-serif;
+  overflow-x: hidden;
  }
 
  a{
@@ -244,15 +245,48 @@
 
 .qualification{
   width: 100%;
-  background: url("https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais") no-repeat center ;
+  background : url("https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais") no-repeat center ;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
-  padding: 4.375rem 0;
+  padding: 4.375rem 0;  
+  max-width: 100%;
 }
 .about-section{
-  height: 800px;
+  overflow: none;
+  width: 100%;
+  height: 640px;
 }
+
+.about-section .row{
+  backdrop-filter: blur(30px);
+  background-color: rgba(65, 65, 65, 0.308);
+}
+.about-section .bg-hover-container{
+  /* width: fit-content; */
+  width: 100%;
+  position: relative;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+.about-section .bg-hover-container::before {
+  width: 500px;
+  height: 500px;
+  content: "";
+  position: absolute;
+  background-color: rgb(144, 161, 255);
+  z-index: -1;
+  border-radius: 50%;
+  left: 450px;
+  top: 100px;
+  transition: all 1s;
+}
+
+.about-section .bg-hover-container:hover::before {
+  transform: translate(-80px, 30px);
+}
+
 
 .about-img-container{
   display: flex;
@@ -281,11 +315,12 @@
 .about-para{
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .about-para p{
   /* word-wrap: break-word; */
-  width: 500px;
+  width: 400px;
   letter-spacing: 0.5;
   line-height: 30px;
   text-align: justify;
@@ -302,23 +337,53 @@
   justify-content: space-around;
 }
 
-/* .education{
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
+/* CUSTOM BUTTON */
 
-.education h2{
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background:transparent;
+  background-size: 400%;
   color: #4770ff;
+  border: none;
+  cursor: pointer;
 }
 
-.education p{
-  color: gray;
-  margin-top: 5px;
-  margin-bottom: 0;
-} */
+.button:hover::before {
+  transform: scaleX(1);
+}
 
+.button:hover{
+color: #fff;
+}
+
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  color: #fff;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
 
 @media only screen and (max-width: 767px){
 
