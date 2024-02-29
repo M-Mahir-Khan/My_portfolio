@@ -60,6 +60,7 @@
   text-align: center;
   text-transform: none;
   border: none;
+  margin-left: 20px;
  }
  .nav-btn:hover{
   box-shadow: 0 0 5px #e5e5ea,
@@ -219,12 +220,13 @@
 }
 
 .footer-li a:hover{
-    box-shadow: 0 0 5px #e5e5ea,
+    /* box-shadow: 0 0 5px #e5e5ea,
      0 0 25px #e5e5ea, 0 0 50px #e5e5ea,
      0 0 100px #e5e5ea,
      0 0 200px #e5e5ea;
      font-weight: 500;
-     transition: 0.4s ease-in-out;
+     transition: 0.4s ease-in-out; */
+     color: #fff;
 }
 
 .icons-container{
@@ -439,6 +441,10 @@ color: #fff;
     left: 300px;
     top: 300px;
     transition: all 1s;
+  }
+
+  .header .container{
+    padding: 12px 0;
   }
 
 

@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="header">
-    <div class="container">
+    <div class="container nav-box1">
   <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down"
   data-aos-easing="linear"
   data-aos-duration="1500">
@@ -57,24 +57,7 @@
   </div>
 </div>
 
-    <!-- bootstrap cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-    function openEmail() {
-    var emailAddress = "mahirmahir8951@gmail.com"; // Replace with your email address
-    var subject = "Hello"; // You can set a default subject
-    var body = "Dear recipient,\n\n"; // You can set a default body
-
-    var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-
-    window.location.href = mailtoLink;
-}
-    </script>   
-</body>
-</html><footer class="footer">
+<footer class="footer">
   <div class="container" data-aos="fade-up"
   data-aos-duration="1000">
     <div class="row">
@@ -94,10 +77,10 @@
             <!-- <li class="footer-li"><a href="./index.html">Home</a></li>
             <li class="footer-li"><a href="./about.html">About</a></li> -->
             <li class="footer-li"><button class="button">
-              <span class="button-content">Home </span>
+              <span class="button-content"><a href="./index.html">Home</a></span>
             </button></li>
             <li class="footer-li"><button class="button">
-              <span class="button-content">About </span>
+              <span class="button-content"><a href="./about.html">About</a> </span>
             </button></li>
             <li class="footer-li">
               <!-- <a href="#" >Contact</a> -->
@@ -119,3 +102,22 @@
     </div>
   </div>
 </footer>
+
+    <!-- bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+    function openEmail() {
+    var emailAddress = "mahirmahir8951@gmail.com"; // Replace with your email address
+    var subject = "Hello"; // You can set a default subject
+    var body = "Dear recipient,\n\n"; // You can set a default body
+
+    var mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+}
+    </script>   
+</body>
+</html>
