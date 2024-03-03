@@ -143,19 +143,98 @@
 } */
 .section-bg{
   width: 100%;
-  background: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg") no-repeat center ;
-  background-size: cover;
+  /* background: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg") no-repeat center ; */
+  /* background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
   padding: 4.375rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; */
 }
 
+.sec-title{
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'dancing Script', cursive;
+}
 .section-img{
   object-fit: cover;
   height: 600px;
 }
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.project {
+  position: relative;
+  background: #cec7ff;
+  width: 300px;
+  margin: 20px;
+  height: 430px;
+  /* margin-bottom: 30px; */
+  /* background-color: #fff; */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in;
+}
+
+.project:hover{
+  transform: translateY(-15px);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-details {
+  padding: 20px; 
+  flex-wrap: wrap;
+}
+
+.project-details h2 {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.project-details p {
+  margin-top: 10px;
+}
+
+.project-details a {
+  /* display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 3px;
+  margin-top: 15px; */
+  text-decoration: none;
+  color: black;
+}
+.project-details button{
+  border: 1px solid gray;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* width: 100%;  */
+  text-align: center;
+}
+
+.project-details button:hover a{
+  color: white;
+}
+
+/* .project-details a:hover {
+  background-color: #555;
+} */
 
  /* 
 ==================================
@@ -447,6 +526,11 @@ color: #fff;
     padding: 12px 0;
   }
 
+  .projects{
+    display: grid;
+    grid-template-columns: 1;
+  }
+
 
 /* .about-section .row{
   backdrop-filter: blur(30px);
@@ -476,5 +560,10 @@ color: #fff;
   
   .about-section{
     height: 100%;
+  }
+
+  .projects{
+    display: grid;
+    grid-template-columns:1fr 1fr;
   }
 }
