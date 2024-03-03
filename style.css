@@ -30,8 +30,6 @@
 
  .navbar{
    background: #CFC9F9;
-   /* position: fixed;
-   top: 0; */
  }
 
  .navbar-brand span {
@@ -75,11 +73,8 @@
  .section{
   background-color: #CFC9F9;
   height: 680px;
-  /* margin-top: 30px; */
-  /* position: relative;
-  top: 80px;
-  left: 0; */
  }
+
  .bg-img{
   position: relative;
   top:  0px;
@@ -110,6 +105,11 @@
   margin-top: 50px;
   color: #666666;
 }
+
+.down-arr h1{
+  text-align: center;
+  font-size: 4rem;
+}
  /* 
 ==================================
     Custom Scrollbar
@@ -133,23 +133,9 @@
     Main setiion Design
 ==================================
 */
-/* .main-section{
-  width: 100%;
-  background: url("https://png.pngtree.com/thumb_back/fh260/back_pic/04/24/66/495836a65fcb8f9.jpg") no-repeat center ;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 71.9125px;
-  padding: 4.375rem 0;
-} */
+
 .section-bg{
   width: 100%;
-  /* background: url("https://static.vecteezy.com/system/resources/thumbnails/008/311/935/small/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg") no-repeat center ; */
-  /* background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 71.9125px;
-  padding: 4.375rem 0;
-  display: flex;
-  justify-content: center; */
 }
 
 .sec-title{
@@ -174,8 +160,6 @@
   width: 300px;
   margin: 20px;
   height: 430px;
-  /* margin-bottom: 30px; */
-  /* background-color: #fff; */
   border: 1px solid #ddd;
   border-radius: 5px;
   overflow: hidden;
@@ -208,13 +192,6 @@
 }
 
 .project-details a {
-  /* display: inline-block;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 3px;
-  margin-top: 15px; */
   text-decoration: none;
   color: black;
 }
@@ -232,9 +209,6 @@
   color: white;
 }
 
-/* .project-details a:hover {
-  background-color: #555;
-} */
 
  /* 
 ==================================
@@ -299,12 +273,6 @@
 }
 
 .footer-li a:hover{
-    /* box-shadow: 0 0 5px #e5e5ea,
-     0 0 25px #e5e5ea, 0 0 50px #e5e5ea,
-     0 0 100px #e5e5ea,
-     0 0 200px #e5e5ea;
-     font-weight: 500;
-     transition: 0.4s ease-in-out; */
      color: #fff;
 }
 
