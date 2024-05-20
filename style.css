@@ -134,7 +134,7 @@
 ==================================
 */
 
-.section-bg{
+/* .section-bg{
   width: 100%;
 }
 
@@ -167,7 +167,7 @@
   transition: transform 0.2s ease-in;
 }
 
-.project:hover{
+.project:hover {
   transform: translateY(-15px);
 }
 
@@ -201,12 +201,105 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  /* width: 100%;  */
   text-align: center;
 }
 
 .project-details button:hover a{
   color: white;
+} */
+
+.section-bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensures the video is behind other content */
+}
+
+.sec-title {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Dancing Script', cursive;
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
+.project {
+  position: relative;
+  background: #cec7ff;
+  width: 300px;
+  margin: 20px;
+  height: 430px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in;
+}
+
+.project:hover {
+  transform: translateY(-15px);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-details {
+  padding: 20px; 
+  flex-wrap: wrap;
+}
+
+.project-details h2 {
+  margin-top: 0;
+  margin-right: 20px;
+}
+
+.project-details p {
+  margin-top: 10px;
+}
+
+.project-details a {
+  text-decoration: none;
+  color: black;
+}
+
+.project-details button {
+  border: 1px solid gray;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  /* width: 100%;  */
+  text-align: center;
+}
+
+.project-details button:hover a {
+  color: white;
+}
+
+.sec-title.mb-5 {
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
 }
 
 
@@ -219,11 +312,12 @@
 .footer{
   padding-top: 49px;
   padding-bottom: 47px;
-  border-top: 1px solid #f7f7fa;
+  /* border-top: 1px solid #f7f7fa; */
   background-color: #fff;
   /* height: 500px; */
   width: 100%;
-  background: url("https://img.freepik.com/free-vector/abstract-empty-blue-color-banner-with-blur-effect-backdrop_1017-44266.jpg") no-repeat center ;
+  /* background: url("https://img.freepik.com/free-vector/abstract-empty-blue-color-banner-with-blur-effect-backdrop_1017-44266.jpg") no-repeat center ; */
+  background: url("https://t4.ftcdn.net/jpg/07/27/82/33/240_F_727823340_ulvi9vVTTGWA1ZhfrIkibKC0cqTBhqwa.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
@@ -231,12 +325,14 @@
   display: flex;
   justify-content: center;
   text-align: center;
+
 }
 
 .footer h3{
   margin-top: 0px;
   margin-bottom: 18px;
-  color: #3a395e;
+  /* color: #3a395e; */
+  color: #0D6EFD;
   font-size: 28px;
   line-height: 1.286em;
   font-weight: 700;
@@ -244,6 +340,7 @@
 
 .footer-para{
   line-height: 25px;
+  color: #0D6EFD;
   margin-bottom: 26px;
 }
 
@@ -282,7 +379,7 @@
 
 }
 .icons-container a{
-  color: #3a395e;
+  color: #0D6EFD;
   margin-left: 20px;
 }
 
@@ -292,7 +389,7 @@
 ==================================
 */
 
-.qualification{
+/* .qualification{
   width: 100%;
   background : url("https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais") no-repeat center ;
   background-size: cover;
@@ -300,7 +397,49 @@
   background-position: 0 71.9125px;
   padding: 4.375rem 0;  
   max-width: 100%;
+} */
+
+.qualification {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  padding: 4.375rem 0;  
+  margin-top: 80px;
+  padding-bottom: 60px;
 }
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensures the video is behind other content */
+}
+
+.container {
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
+h2.text-primary {
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
+.para-container {
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
+.about-row-para {
+  position: relative; /* Ensure it stays above the video */
+  z-index: 1;
+}
+
 .about-section{
   overflow: none;
   width: 100%;
@@ -378,7 +517,7 @@
 }
 
 .about-row-para{
-  color: gray;
+  color: #331B95;
   margin-top: 5px;
   margin-bottom: 0;
 }
@@ -497,6 +636,7 @@ color: #fff;
   .projects{
     display: grid;
     grid-template-columns: 1;
+    justify-items: center;
   }
 
 
