@@ -639,6 +639,32 @@ color: #fff;
     justify-items: center;
   }
 
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .about-section .about-img-container {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .about-section img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-para {
+    padding: 1rem;
+  }
+
+  .qualification .para-container {
+    padding: 1rem;
+  }
+
+  .footer-menu ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
 
 /* .about-section .row{
   backdrop-filter: blur(30px);
