@@ -134,79 +134,7 @@
 ==================================
 */
 
-/* .section-bg{
-  width: 100%;
-}
 
-.sec-title{
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'dancing Script', cursive;
-}
-.section-img{
-  object-fit: cover;
-  height: 600px;
-}
-
-.projects {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.project {
-  position: relative;
-  background: #cec7ff;
-  width: 300px;
-  margin: 20px;
-  height: 430px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in;
-}
-
-.project:hover {
-  transform: translateY(-15px);
-}
-
-.project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-details {
-  padding: 20px; 
-  flex-wrap: wrap;
-}
-
-.project-details h2 {
-  margin-top: 0;
-  margin-right: 20px;
-}
-
-.project-details p {
-  margin-top: 10px;
-}
-
-.project-details a {
-  text-decoration: none;
-  color: black;
-}
-.project-details button{
-  border: 1px solid gray;
-  margin-top: 20px;
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  text-align: center;
-}
-
-.project-details button:hover a{
-  color: white;
-} */
 
 .section-bg {
   position: relative;
@@ -616,17 +544,18 @@ color: #fff;
   }
 
   .about-section .bg-hover-container::before {
-    width: 200px;
+    display: none;
+    /* width: 200px;
     height: 200px;
     content: "";
-    position: absolute;
+    position: absolute; */
     /* background-color: rgb(144, 161, 255); */
-    background: #fff;
+    /* background: #fff;
     z-index: -1;
     border-radius: 50%;
     left: 300px;
     top: 300px;
-    transition: all 1s;
+    transition: all 1s; */
   }
 
   .header .container{
