@@ -80,7 +80,6 @@
   top:  0px;
   left:0;
   object-fit: cover;
-  /* background-repeat: no-repeat; */
   height: 100%;
   width: 100%;
  }
@@ -140,24 +139,17 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  background: url(https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149976755.jpg?t=st=1726057098~exp=1726060698~hmac=9e1d58b495da955fb4c140b6434c9f0b83f8c8a41dcba8f6a81856d8a5cdced7&w=740);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
 }
 
-#bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1; /* Ensures the video is behind other content */
-}
 
 .sec-title {
   text-align: center;
   margin-top: 20px;
   font-family: 'Dancing Script', cursive;
-  position: relative; /* Ensure it stays above the video */
   z-index: 1;
 }
 
@@ -165,7 +157,6 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  position: relative; /* Ensure it stays above the video */
   z-index: 1;
 }
 
@@ -217,7 +208,6 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
-  /* width: 100%;  */
   text-align: center;
 }
 
@@ -225,11 +215,53 @@
   color: white;
 }
 
-.sec-title.mb-5 {
-  position: relative; /* Ensure it stays above the video */
-  z-index: 1;
+.project-card {
+  height: 100%; 
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.6);
+  margin-right: 50px;
 }
 
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-media {
+  height: auto; 
+  overflow: hidden;
+}
+
+.project-media img, .project-media video {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
+
+.card-body {
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.3s ease;
+}
+.project-card a{
+  text-decoration: none;
+  color: #fff;
+ }
+
+.project-card:hover .card-body {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
 
  /* 
 ==================================
@@ -240,12 +272,9 @@
 .footer{
   padding-top: 49px;
   padding-bottom: 47px;
-  /* border-top: 1px solid #f7f7fa; */
   background-color: #fff;
-  /* height: 500px; */
   width: 100%;
-  /* background: url("https://img.freepik.com/free-vector/abstract-empty-blue-color-banner-with-blur-effect-backdrop_1017-44266.jpg") no-repeat center ; */
-  background: url("https://t4.ftcdn.net/jpg/07/27/82/33/240_F_727823340_ulvi9vVTTGWA1ZhfrIkibKC0cqTBhqwa.jpg");
+  background: #CFC9F9;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 71.9125px;
@@ -259,7 +288,6 @@
 .footer h3{
   margin-top: 0px;
   margin-bottom: 18px;
-  /* color: #3a395e; */
   color: #0D6EFD;
   font-size: 28px;
   line-height: 1.286em;
@@ -317,20 +345,12 @@
 ==================================
 */
 
-/* .qualification{
-  width: 100%;
-  background : url("https://img.freepik.com/premium-vector/light-blurred-bokeh-background-vector-illustration_64749-4575.jpg?size=626&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais") no-repeat center ;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 0 71.9125px;
-  padding: 4.375rem 0;  
-  max-width: 100%;
-} */
 
 .qualification {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  background: url(https://img.freepik.com/premium-photo/watercolor-painting-water-droplet-bubbles_1290686-27243.jpg?w=740);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
   overflow: hidden;
   padding: 4.375rem 0;  
   margin-top: 80px;
@@ -345,28 +365,19 @@
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  z-index: -1; /* Ensures the video is behind other content */
+  z-index: -1;
 }
 
 .container {
-  position: relative; /* Ensure it stays above the video */
+  position: relative; 
   z-index: 1;
 }
 
 h2.text-primary {
-  position: relative; /* Ensure it stays above the video */
+  position: relative; 
   z-index: 1;
 }
 
-.para-container {
-  position: relative; /* Ensure it stays above the video */
-  z-index: 1;
-}
-
-.about-row-para {
-  position: relative; /* Ensure it stays above the video */
-  z-index: 1;
-}
 
 .about-section{
   overflow: none;
@@ -376,17 +387,12 @@ h2.text-primary {
 
 .about-section .row{
   backdrop-filter: blur(30px);
-  /* background-color: rgba(65, 65, 65, 0.308); */
   background-color: rgba(255, 251, 251, 0);
 
 }
 .about-section .bg-hover-container{
-  /* width: fit-content; */
   width: 100%;
   position: relative;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 .about-section .bg-hover-container::before {
   width: 500px;
@@ -437,7 +443,6 @@ h2.text-primary {
 }
 
 .about-para p{
-  /* word-wrap: break-word; */
   width: 400px;
   letter-spacing: 0.5;
   line-height: 30px;
@@ -468,6 +473,7 @@ h2.text-primary {
   color: #4770ff;
   border: none;
   cursor: pointer;
+  border: 1px solid #965de9;
 }
 
 .button:hover::before {
@@ -545,17 +551,6 @@ color: #fff;
 
   .about-section .bg-hover-container::before {
     display: none;
-    /* width: 200px;
-    height: 200px;
-    content: "";
-    position: absolute; */
-    /* background-color: rgb(144, 161, 255); */
-    /* background: #fff;
-    z-index: -1;
-    border-radius: 50%;
-    left: 300px;
-    top: 300px;
-    transition: all 1s; */
   }
 
   .header .container{
@@ -595,10 +590,9 @@ color: #fff;
     margin: 0.5rem 0;
   }
 
-/* .about-section .row{
-  backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.863);
-} */
+  .project-card{
+    margin-right: 0;
+  }
 }
 
 
@@ -625,8 +619,8 @@ color: #fff;
     height: 100%;
   }
 
-  .projects{
+  /* .projects{
     display: grid;
     grid-template-columns:1fr 1fr;
-  }
+  } */
 }
