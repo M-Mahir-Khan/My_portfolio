@@ -347,13 +347,15 @@
 
 
 .qualification {
-  background: url(https://img.freepik.com/premium-photo/watercolor-painting-water-droplet-bubbles_1290686-27243.jpg?w=740);
+  background: url("./images/bg-img.png");
   background-repeat: no-repeat;
   background-position: fixed;
+  /* background: linear-gradient(135deg, #CFC9F9 0%, #E9E4FF 100%); */
+
   background-size: cover;
   overflow: hidden;
   padding: 4.375rem 0;  
-  margin-top: 80px;
+  /* margin-top: 80px; */
   padding-bottom: 60px;
 }
 
@@ -399,7 +401,8 @@ h2.text-primary {
   height: 500px;
   content: "";
   position: absolute;
-  background-color: rgb(144, 161, 255);
+  /* background-color: rgb(144, 161, 255); */
+  background-color: #D4CFFB;
   z-index: -1;
   border-radius: 50%;
   left: 450px;
@@ -446,7 +449,7 @@ h2.text-primary {
   width: 400px;
   letter-spacing: 0.5;
   line-height: 30px;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-row-para{
@@ -508,6 +511,34 @@ color: #fff;
   );
   transition: all 0.475s;
 }
+
+
+#skills{
+  background: linear-gradient(135deg, #CFC9F9 0%, #E9E4FF 100%);
+  display: flex;
+  justify-content: center;
+
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  /* background: #1A2A47; */
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: #6f42c1;
+}
+
 
 @media only screen and (max-width: 768px){
 
